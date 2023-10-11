@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
@@ -29,16 +31,13 @@
         <li><a href="#">About </a></li>
         <li>Service</li>
         <li>Projects</li>
+        <li><a href="#">Contact</a></li>
       </ul>
-      <!-- <nav></nav> -->
     </header>
 
     <h1 class="font-serif text-white font-bold text-8xl uppercase tracking-widest text-center py-36"> We are creatives </h1>
 
     <img src="images/icon-arrow-down.svg" alt="" class="mx-auto pb-36">
-
-
-
 
   </section>
 
@@ -48,7 +47,7 @@
     </div>
     <div class="lg:w-1/2 p-12 text-center lg:text-left">
       <h2 class="font-serif text-5xl pt-6 "> Transform your brand</h2>
-      <p class="py-8 text-xl leading-relaxed text-dark-grayish-blue">
+      <p class="py-8 text-2xl leading-relaxed text-dark-grayish-blue">
         We are a full-service creative agency specializing in helping brands grow fast. 
         Engage your clients through compelling visuals that do most of the marketing for you.
       </p>
@@ -64,7 +63,7 @@
         </div>
         <div class="lg:w-1/2 p-12 text-center lg:text-left">
         <h2 class="font-serif text-5xl pt-6 "> Stand out to the right audience</h2>
-        <p class="py-8 text-xl leading-relaxed text-dark-grayish-blue">
+        <p class="py-8 text-2xl leading-relaxed text-dark-grayish-blue">
             Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, 
             we’ll build and extend your brand in digital places.
         </p>
@@ -73,42 +72,75 @@
         
         </div>
     </section>
-    <div class="client-testimonials py-10 px-5 bg-gray-100">
-        <div class="client-testimonials-inner mx-auto max-w-7xl">
-            <h3 class="testimonials-title text-2xl font-bold mb-10 text-center">Client testimonials</h3>
-    
-            <div class="testimonials-wrapper grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="testimonial flex flex-col items-center text-center">
-                    <img class="mb-5 rounded-full w-24 h-24" src="./images/image-emily.jpg" alt="Emily R." />
-                    <p class="testimonial-description mb-5">
-                        We put our trust in Sunnyside and they delivered, making sure
-                        our needs were met and deadlines were always hit.
-                    </p>
-                    <p class="testimonial-author font-semibold">Emily R.</p>
-                    <p class="testimonial-author-title text-sm text-gray-500">Marketing Director</p>
-                </div>
-    
-                <div class="testimonial flex flex-col items-center text-center">
-                    <img class="mb-5 rounded-full w-24 h-24" src="./images/image-thomas.jpg" alt="Thomas S." />
-                    <p class="testimonial-description mb-5">
-                        Sunnyside's enthusiasm coupled with their keen interest in our
-                        brand's success made it a satisfying and enjoyable experience.
-                    </p>
-                    <p class="testimonial-author font-semibold">Thomas S.</p>
-                    <p class="testimonial-author-title text-sm text-gray-500">Chief Operating Officer</p>
-                </div>
-    
-                <div class="testimonial flex flex-col items-center text-center">
-                    <img class="mb-5 rounded-full w-24 h-24" src="./images/image-jennie.jpg" alt="Jennie F." />
-                    <p class="testimonial-description mb-5">
-                        Incredible end result! Our sales increased over 400% when we
-                        worked with Sunnyside. Highly recommended!
-                    </p>
-                    <p class="testimonial-author font-semibold">Jennie F.</p>
-                    <p class="testimonial-author-title text-sm text-gray-500">Business Owner</p>
-                </div>
-            </div>
-        </div>
+
+    <div class="flex flex-col md:flex-row h-screen">
+      <!-- Graphic Design Section -->
+      <section class="md:w-1/2 bg-center bg-cover flex flex-col justify-center p-10" style="background-image: url('images/mobile/image-graphic-design.jpg');">
+          <div class="text-center mb-10">
+              <h2 class="font-serif text-5xl mb-3 text-white">Graphic Design</h2>
+              <p class="text-xl text-white">
+                  Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
+              </p>
+          </div>
+      </section>
+  
+      <!-- Photography Section -->
+      <section class="md:w-1/2 bg-center bg-cover flex flex-col justify-center p-10" style="background-image: url('images/mobile/image-photography.jpg');">
+          <div class="text-center mt-10">
+              <h2 class="font-serif text-5xl mb-3 text-white">Photography</h2>
+              <p class="text-xl text-white">
+                  Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+              </p>
+          </div>
+      </section>
+  </div>
+  
+  
+  
+  
+
+  <div class="client-testimonials py-10 px-5 bg-gray-100">
+    <div class="client-testimonials-inner mx-auto max-w-7xl">
+        <h3 class="font-serif testimonials-title text-2xl font-bold mb-10 text-center text-gray-400">Client testimonials</h3>
+        <div class="testimonials-wrapper grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Testimonial 1 -->
+          <div class="testimonial flex flex-col items-center text-center space-y-8">
+              <img class="rounded-full w-24 h-24 object-cover border-2 border-gray-300 mb-8" src="./images/image-emily.jpg" alt="Emily R." />
+              <p class="testimonial-description mb-8">
+                  We put our trust in Sunnyside and they delivered, making sure
+                  our needs were met and deadlines were always hit.
+              </p>
+              <p class="font-serif testimonial-author text-medium text-dark-grayish-blue font-semibold">Emily R.</p>
+              <p class="testimonial-author-title text-sm text-gray-500">Marketing Director</p>
+          </div>
+
+          
+          <!-- Testimonial 2 -->
+          <div class="testimonial flex flex-col items-center text-center space-y-8">
+              <img class="rounded-full w-24 h-24 object-cover border-2 border-gray-300 mb-8" src="./images/image-thomas.jpg" alt="John D." />
+              <p class="testimonial-description mb-8">
+                  Sunnyside's team exceeded our expectations. They transformed our ideas into reality.
+              </p>
+              <p class="font-serif testimonial-author text-medium text-dark-grayish-blue font-semibold">John D.</p>
+              <p class="testimonial-author-title text-sm text-gray-500">CEO</p>
+          </div>
+
+          
+          <!-- Testimonial 3 -->
+          <div class="testimonial flex flex-col items-center text-center space-y-8">
+              <img class="rounded-full w-24 h-24 object-cover border-2 border-gray-300 mb-8" src="./images/image-jennie.jpg" alt="Jane S." />
+              <p class="testimonial-description mb-8">
+                  Collaborating with Sunnyside was a pleasure. They were attentive and professional.
+              </p>
+              <p class="font-serif testimonial-author text-medium text-dark-grayish-blue font-semibold">Jane S.</p>
+              <p class="testimonial-author-title text-sm text-gray-500">Product Manager</p>
+          </div>
+      </div>
+    </div>
+  </div>
+
+      
+
         <div class="bottom-images flex flex-wrap">
             <!-- Image 1 -->
             <img src="images/desktop/image-gallery-milkbottles.jpg" alt="Milk Bottles" class="w-1/2 md:w-1/4">
@@ -125,20 +157,23 @@
          
     </div>
     <footer class="text-dark-blue bg-dark-moderate-cyan p-20">
-        <img src="./images/logo.svg" alt="Sunnyside Agency Logo" class="mx-auto mb-12 block" />
-        <ul class="flex justify-between mb-22">
-            <li><a href="#" class="text-dark-blue no-underline hover:white">About</a></li>
-            <li><a href="#" class="text-dark-blue no-underline hover:white">Services</a></li>
-            <li><a href="#" class="text-dark-blue no-underline hover:white">Projects</a></li>
-        </ul>
-        <div class="flex justify-center space-x-7">
-            <i class="fab fa-facebook-square cursor-pointer hover:text-white"></i>
-            <i class="fab fa-instagram cursor-pointer hover:text-white"></i>
-            <i class="fab fa-twitter cursor-pointer hover:text-white"></i>
-            <i class="fab fa-pinterest cursor-pointer hover:text-white"></i>
-        </div>
-        
-    </footer>
-    <script src="https://kit.fontawesome.com/8e7c1629b8.js" crossorigin="anonymous"></script>    
+      <img src="./images/logo.svg" alt="Sunnyside Agency Logo" class="mx-auto mb-6 block" />
+      <ul class="flex justify-center space-x-4 mb-6">
+          <li><a href="#" class="text-dark-blue no-underline hover:text-white">About</a></li>
+          <li><a href="#" class="text-dark-blue no-underline hover:text-white">Services</a></li>
+          <li><a href="#" class="text-dark-blue no-underline hover:text-white">Projects</a></li>
+      </ul>
+      <div class="flex justify-center space-x-7">
+        <i class="fab fa-facebook-square cursor-pointer hover:text-white"></i>
+        <i class="fab fa-instagram cursor-pointer hover:text-white"></i>
+        <i class="fab fa-twitter cursor-pointer hover:text-white"></i>
+        <i class="fab fa-pinterest cursor-pointer hover:text-white"></i>
+    </div>
+      <script src="https://kit.fontawesome.com/8e7c1629b8.js" crossorigin="Tucker Brown"></script>  
+  </footer>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Tucker Brown</a>.
+  </div>
 </body>
 </html>
